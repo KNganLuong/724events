@@ -12,7 +12,7 @@ const EventCard = ({
   small = false,
   ...props
 }) => (
-  <section
+  <div
     data-testid='card-testid'
     className={`EventCard${small ? ' EventCard--small' : ''}`}
     {...props}
@@ -25,7 +25,7 @@ const EventCard = ({
       <div className='EventCard__title'>{title}</div>
       <div className='EventCard__month'>{getMonth(date)}</div>
     </div>
-  </section>
+  </div>
 )
 
 EventCard.propTypes = {
